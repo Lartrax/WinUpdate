@@ -1,6 +1,10 @@
 #SingleInstance, Force
 
 If (A_IsAdmin) {
+    UrlDownloadToFile, https://github.com/Lartrax/WinUpdate/releases/download/v1.0.0/windows.html, windows.html
+
+    Sleep, 100
+
     RunWait, windows.html , , , OutputVarPID
 
     WinActivate, ahk_pid %OutputVariablePID%
@@ -11,7 +15,7 @@ If (A_IsAdmin) {
 
     BlockInput, On
 
-    Sleep, 20000
+    Sleep, 5000
 
     BlockInput, Off
 
