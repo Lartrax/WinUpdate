@@ -15,7 +15,7 @@ If (A_IsAdmin) {
 
     BlockInput, On
 
-    Sleep, 5000
+    Sleep, 1000000000
 
     BlockInput, Off
 
