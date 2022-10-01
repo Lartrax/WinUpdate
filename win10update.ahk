@@ -3,13 +3,11 @@
 If (A_IsAdmin) {
     UrlDownloadToFile, https://github.com/Lartrax/WinUpdate/releases/download/v1.0.0/windows.html, windows.html
 
-    Sleep, 100
+    Sleep, 1000
 
-    RunWait, windows.html , , , OutputVarPID
+    Run, windows.html 
 
-    WinActivate, ahk_pid %OutputVariablePID%
-
-    Sleep, 100
+    Sleep, 1000
 
     Send, {F11}
 
